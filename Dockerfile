@@ -34,7 +34,7 @@ RUN /bin/bash -c "source activate cap \
     && mv resistome /bin"
 WORKDIR /home/metasub/manual_tools
 RUN /bin/bash -c "source activate cap \
-    && hg clone https://bitbucket.org/biobakery/metaphlan2 \
+    && git clone https://github.com/biobakery/metaphlan \
     && cd metaphlan2 \
     && mv metaphlan2.py /bin"
 WORKDIR /home/metasub/manual_tools
